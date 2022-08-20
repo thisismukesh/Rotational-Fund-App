@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		E1A1A2B428A1F6F000079248 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1A2B328A1F6F000079248 /* Tests_iOS.swift */; };
 		E1A1A2B628A1F6F000079248 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1A2B528A1F6F000079248 /* Tests_iOSLaunchTests.swift */; };
-		E1A1A2C028A1F6F000079248 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1A2BF28A1F6F000079248 /* Tests_macOS.swift */; };
-		E1A1A2C228A1F6F000079248 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1A2C128A1F6F000079248 /* Tests_macOSLaunchTests.swift */; };
 		E1A1A2C328A1F6F000079248 /* FundAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1A29B28A1F6EF00079248 /* FundAppApp.swift */; };
 		E1A1A2C428A1F6F000079248 /* FundAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1A29B28A1F6EF00079248 /* FundAppApp.swift */; };
 		E1A1A2C528A1F6F000079248 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1A29C28A1F6EF00079248 /* ContentView.swift */; };
@@ -42,13 +40,10 @@
 		E1A1A29D28A1F6F000079248 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1A1A2A228A1F6F000079248 /* FundApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FundApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A1A2A828A1F6F000079248 /* FundApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FundApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1A1A2AA28A1F6F000079248 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		E1A1A2AF28A1F6F000079248 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A1A2B328A1F6F000079248 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		E1A1A2B528A1F6F000079248 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
 		E1A1A2BB28A1F6F000079248 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1A1A2BF28A1F6F000079248 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		E1A1A2C128A1F6F000079248 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				E1A1A29A28A1F6EF00079248 /* Shared */,
-				E1A1A2A928A1F6F000079248 /* macOS */,
 				E1A1A2B228A1F6F000079248 /* Tests iOS */,
-				E1A1A2BE28A1F6F000079248 /* Tests macOS */,
 				E1A1A2A328A1F6F000079248 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,14 +108,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E1A1A2A928A1F6F000079248 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				E1A1A2AA28A1F6F000079248 /* macOS.entitlements */,
-			);
-			path = macOS;
-			sourceTree = "<group>";
-		};
 		E1A1A2B228A1F6F000079248 /* Tests iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,15 +115,6 @@
 				E1A1A2B528A1F6F000079248 /* Tests_iOSLaunchTests.swift */,
 			);
 			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		E1A1A2BE28A1F6F000079248 /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				E1A1A2BF28A1F6F000079248 /* Tests_macOS.swift */,
-				E1A1A2C128A1F6F000079248 /* Tests_macOSLaunchTests.swift */,
-			);
-			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,8 +302,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1A1A2C228A1F6F000079248 /* Tests_macOSLaunchTests.swift in Sources */,
-				E1A1A2C028A1F6F000079248 /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
